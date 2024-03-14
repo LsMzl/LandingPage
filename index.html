@@ -52,19 +52,24 @@
       <nav>
         <ul>
           <li>
-            <a href="" class="btn_cta">Prévenez-moi !</a>
+            <a href="" onclick="openNewsletterForm()" class="btn_cta"
+              >Prévenez-moi !</a
+            >
           </li>
         </ul>
       </nav>
     </header>
 
     <section>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg
+        class="wave"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
         <path
-          fill="#5000ca"
+          fill="#3C2E69"
           fill-opacity="1"
           d="M0,160L34.3,144C68.6,128,137,96,206,80C274.3,64,343,64,411,74.7C480,85,549,107,617,144C685.7,181,754,235,823,250.7C891.4,267,960,245,1029,218.7C1097.1,192,1166,160,1234,138.7C1302.9,117,1371,107,1406,101.3L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-          class="wave"
         ></path>
       </svg>
 
@@ -94,28 +99,66 @@
             <span>Secondes</span>
           </div>
         </div>
+        <a href="" onclick="openNewsletterForm()" class="btn_cta"
+          >Prévenez-moi !</a
+        >
       </div>
 
       <div class="imgBox">
-        <img src="./img/section/panda-ramen.png" alt="Image du panda ramen">
+        <img src="./img/section/panda-ramen.png" alt="Image du panda ramen" />
       </div>
-
     </section>
 
     <!-- NEWSLETTER -->
     <div class="newsletter">
-      <h2>Restez connectés</h2>
-      <p>Soyez informés du lancement</p>
-    </div>
+      <div class="newsletter_title">
+        <h2>Restez connectés</h2>
+        <p>Soyez informés du lancement</p>
+      </div>
 
+      <!-- Formulaire souscription newsletter -->
+      <div class="newsletter_form">
+        <form action="">
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="Votre email"
+            required
+          />
+          <input type="submit" value="M'abonner" />
+        </form>
+      </div>
 
-    <!-- Formulaire newsletter -->
-    <div class="inputBox">
-      <form action="">
-        <input type="email" name="" id="" placeholder="Votre email" required />
-        <input type="submit" value="M'abonner">
-      </form>
+      <!-- Politique de confidentialité RGPD -->
+      <div class="newsletter_policy">
+        <p>
+          En renseignant votre adresse email, vous acceptez de recevoir chaque
+          semaine nos derniers articles de blog et vous prenez connaissance de
+          notre <a href="#">politique de confidentialité</a>.
+        </p>
+        <p>
+          Vous pouvez vous désinscire à tout moment à l'aide de ce
+          <a href="#">lien</a> ou en nous contactant à cette
+          <a href="#">adresse</a>.
+        </p>
+      </div>
+
+      <!-- Image pour la fermuture de la pop-up du formulaire -->
+      <img
+        class="close"
+        onclick="openNewsletterForm()" 
+        src="./img/section/close.png"
+        alt="Image pour fermer la pop-up du formulaire"
+      />
     </div>
+    <!-- Footer -->
+    <footer>
+      <div class="copyright">
+        Tous droits réservés &copy; <a href="#" target="_blank">LouisMzl</a> |
+        2024
+      </div>
+    </footer>
 
     <!-- JavaScript -->
     <script src="./assets/js/main.js"></script>

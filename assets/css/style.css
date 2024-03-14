@@ -1,0 +1,250 @@
+/* Font-Family */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Color variables */
+:root {
+  --primary: #1b1525;
+  --secondary: #6958ad;
+  --font: #e6e2fd;
+  --alternative: #718096;
+}
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--font);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+header .logo {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: var(--font);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+header .logo .logo_img {
+  width: 50px;
+  height: 50px;
+}
+
+header nav {
+  position: relative;
+}
+header nav ul {
+  position: relative;
+  display: flex;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  position: relative;
+  margin-top: 20px;
+  display: inline-block;
+  background-color: var(--secondary);
+  color: var(--font);
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+header nav ul li a:hover {
+  color: var(--secondary);
+  background-color: var(--font);
+  transition: 0.2s ease;
+}
+
+/* Main Section */
+section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 5%;
+}
+
+section .contentBox {
+  position: relative;
+  min-width: 32%;
+  z-index: 1000;
+}
+section .contentBox h2 {
+  font-size: 3.75rem;
+  text-transform: uppercase;
+}
+section .contentBox p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+section .contentBox .countDown {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+section .contentBox .countDown .time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--font);
+  border-radius: 5px;
+  padding: 10px 5px 15px;
+  margin-top: 10px;
+  min-width: 110px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--secondary);
+}
+section .contentBox .countDown .time span {
+  margin-top: -10px;
+  font-size: 1.2rem;
+  color: var(--alternative);
+  font-weight: 800;
+}
+section .contentBox a {
+  position: relative;
+  margin-top: 20px;
+  display: inline-block;
+  background-color: var(--secondary);
+  color: var(--font);
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+section .imgBox img {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  margin-top: 100px;
+  z-index: 2;
+}
+
+section .wave {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Newsletter */
+.newsletter {
+  position: fixed;
+  z-index: 10000;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  padding: 60px;
+  background-color: var(--font);
+  box-shadow: 0 0 0 100vh rgba(49, 39, 71, 0.95);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.newsletter.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.newsletter .newsletter_title h2 {
+  font-size: 3rem;
+  color: var(--secondary);
+  margin-bottom: 10px;
+}
+.newsletter .newsletter_title p {
+  font-size: 1.2rem;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.newsletter .newsletter_form {
+  margin-top: 20px;
+}
+.newsletter .newsletter_form input {
+  padding: 10px;
+  width: 300px;
+  font-size: 1.125rem;
+  border: 2px solid var(--alternative);
+  border-radius: 5px;
+}
+.newsletter .newsletter_form input[type="submit"] {
+  width: 150px;
+  cursor: pointer;
+  background-color: var(--secondary);
+  color: var(--font);
+}
+.newsletter .newsletter_form input[type="submit"]:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.newsletter .newsletter_policy {
+  color: var(--alternative);
+  margin-top: 10px;
+}
+.newsletter .newsletter_policy p {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.newsletter .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  text-align: center;
+}
+footer .copyright {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 500;
+}
+footer .copyright a {
+  color: var(--secondary);
+}
+footer .copyright a:hover {
+  color: var(--alternative);
+}
