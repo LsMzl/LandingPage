@@ -105,21 +105,290 @@
 }
 
 /* Extra-small devices - portrait phone & less than 576px */
-@media (max-width: 320px) and (min-width: 575.98px) {
+@media (min-width: 320px) and (max-width: 575.98px) {
+  /* HEADER */
+  header {
+    flex-direction: column;
+    padding: 20px;
+  }
+  header nav {
+    margin-top: 10px;
+  }
+  header nav ul li a {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    padding: 10px 10px;
+    margin-top: 0;
+  }
+
+  /* MAIN SECTION */
+  section {
+    flex-direction: column;
+    padding-top: 50%;
+    margin: auto;
+  }
+  section .contentBox {
+    width: 90%;
+  }
+  section .contentBox h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 5px;
+    margin-top: -30px;
+  }
+  section .contentBox p {
+    font-size: 14px;
+    text-align: center;
+  }
+  section .contentBox .countDown {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  section .contentBox .countDown .time {
+    margin-top: 0;
+    padding: 5px 0;
+    min-width: 90px;
+    font-size: 2.5rem;
+  }
+  section .contentBox a {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    padding: 10px 10px;
+    width: 120px;
+    margin: 45px auto;
+    display: block;
+  }
+  section .imgBox img {
+    width: 300px;
+    margin-top: -130px;
+  }
+  /* section .wave {
+      height: 550px;
+    } */
+
+  /* NEWSLETTER*/
+  .newsletter {
+    width: 300px;
+    padding: 20px;
+  }
+  .newsletter .newsletter_title {
+    text-align: center;
+  }
+  .newsletter .newsletter_title h2 {
+    font-size: 1.7rem;
+    margin-bottom: 0;
+  }
+  .newsletter .newsletter_title p {
+    font-size: 1.1rem;
+  }
+  .newsletter .newsletter_form {
+    margin-top: 10px;
+  }
+  .newsletter .newsletter_form input {
+    padding: 5px;
+    width: 80%;
+    font-size: 1.125rem;
+    border: 2px solid var(--alternative);
+    border-radius: 5px;
+  }
+  .newsletter .newsletter_form input[type="submit"] {
+    width: 18%;
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: var(--font);
+  }
+  .newsletter .newsletter_policy p {
+    font-size: 0.6rem;
+    text-align: justify;
+  }
+  .newsletter .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+  }
 }
 
 /* Small devices - landscape phones & 576px and up */
-@media (max-width: 576px) and (min-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* HEADER */
+  header {
+    padding: 40px;
+  }
+  header nav {
+    margin-top: 10px;
+  }
+  header nav ul li a {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    padding: 10px 15px;
+    margin-top: 0;
+  }
+
+  /* MAIN SECTION */
+  section {
+    flex-direction: column;
+    padding-top: 30%;
+    margin: auto;
+  }
+  section .contentBox {
+    width: 90%;
+  }
+  section .contentBox h2 {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 5px;
+    margin-top: -30px;
+  }
+  section .contentBox p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  section .contentBox .countDown {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  section .contentBox .countDown .time {
+    margin-top: 0;
+    padding: 5px 0;
+    min-width: 90px;
+    font-size: 2.5rem;
+  }
+  section .contentBox a {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    padding: 15px 15px;
+    width: 170px;
+    text-align: center;
+    margin: 45px auto;
+    display: block;
+  }
+  section .imgBox img {
+    width: 350px;
+    margin-top: -90px;
+  }
+  /* section .wave {
+      height: 550px;
+    } */
+
+  /* NEWSLETTER*/
+  .newsletter {
+    width: 300px;
+    padding: 20px;
+  }
+  .newsletter .newsletter_title {
+    text-align: center;
+  }
+  .newsletter .newsletter_title h2 {
+    font-size: 1.7rem;
+    margin-bottom: 0;
+  }
+  .newsletter .newsletter_title p {
+    font-size: 1.1rem;
+  }
+  .newsletter .newsletter_form {
+    margin-top: 10px;
+  }
+  .newsletter .newsletter_form input {
+    padding: 5px;
+    width: 80%;
+    font-size: 1.125rem;
+    border: 2px solid var(--alternative);
+    border-radius: 5px;
+  }
+  .newsletter .newsletter_form input[type="submit"] {
+    width: 18%;
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: var(--font);
+  }
+  .newsletter .newsletter_policy p {
+    font-size: 0.6rem;
+    text-align: justify;
+  }
+  .newsletter .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+  }
 }
 
 /* Medium devices - Tablets & 768px and up */
-@media (max-width: 768px) and (min-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* HEADER */
+  header {
+    padding: 40px;
+  }
+  header nav {
+    margin-top: 10px;
+  }
+  header nav ul li a {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    padding: 10px 15px;
+    margin-top: 0;
+  }
+
+  /* MAIN SECTION */
+  section {
+    flex-direction: column;
+    padding-top: 30%;
+    margin: auto;
+  }
+  section .contentBox {
+    width: 90%;
+  }
+  section .contentBox h2 {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 5px;
+    margin-top: -30px;
+  }
+  section .contentBox p {
+    font-size: 1.5;
+    text-align: center;
+  }
+  section .contentBox .countDown {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  section .contentBox .countDown .time {
+    margin-top: 0;
+    padding: 5px 0;
+    min-width: 90px;
+    font-size: 2.5rem;
+  }
+  section .contentBox a {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    padding: 15px 15px;
+    width: 170px;
+    text-align: center;
+    margin: 45px auto;
+    display: block;
+  }
+  section .imgBox img {
+    width: 350px;
+    margin-top: -10%;
+  }
+  /* section .wave {
+        height: 550px;
+      } */
 }
 
 /* Large devices - Desktop & 992px and up */
-@media (max-width: 992px) and (min-width: 1199.98px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
 }
 
 /* Extra-Large devices - Large desktop & 1200px and up */
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
 }
