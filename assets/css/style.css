@@ -95,7 +95,7 @@ section {
 
 section .contentBox {
   position: relative;
-  min-width: 32%;
+  width: 35%;
   z-index: 1000;
 }
 section .contentBox h2 {
@@ -148,7 +148,7 @@ section .imgBox img {
   position: relative;
   max-width: 900px;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 80px;
   z-index: 2;
 }
 
