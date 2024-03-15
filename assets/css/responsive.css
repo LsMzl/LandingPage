@@ -278,14 +278,14 @@
 
   /* NEWSLETTER*/
   .newsletter {
-    width: 300px;
+    width: 400px;
     padding: 20px;
   }
   .newsletter .newsletter_title {
     text-align: center;
   }
   .newsletter .newsletter_title h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin-bottom: 0;
   }
   .newsletter .newsletter_title p {
@@ -377,12 +377,54 @@
     display: block;
   }
   section .imgBox img {
-    width: 350px;
+    max-width: 1000px;
     margin-top: -10%;
   }
   /* section .wave {
         height: 550px;
       } */
+  /* NEWSLETTER*/
+  .newsletter {
+    width: 600px;
+    padding: 40px;
+  }
+  .newsletter .newsletter_title {
+    text-align: center;
+  }
+  .newsletter .newsletter_title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+  .newsletter .newsletter_title p {
+    font-size: 1.3rem;
+  }
+  .newsletter .newsletter_form {
+    margin-top: 10px;
+  }
+  .newsletter .newsletter_form input {
+    padding: 10px;
+    width: 75%;
+    font-size: 1.125rem;
+    border: 2px solid var(--alternative);
+    border-radius: 5px;
+  }
+  .newsletter .newsletter_form input[type="submit"] {
+    width: 24%;
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: var(--font);
+  }
+  .newsletter .newsletter_policy p {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+  .newsletter .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 /* Large devices - Desktop & 992px and up */

@@ -143,6 +143,12 @@ section .contentBox a {
   border-radius: 30px;
   font-weight: 600;
 }
+header nav ul li a:hover {
+  color: var(--secondary);
+  background-color: var(--font);
+  transition: 0.2s ease;
+}
+
 
 section .imgBox img {
   position: relative;

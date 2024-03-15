@@ -45,6 +45,7 @@
   </head>
 
   <body>
+    <!-- HEADER -->
     <header>
       <a href="#" class="logo">
         <img src="./img/section/logo.svg" alt="Logo du site" class="logo_img" />
@@ -53,9 +54,7 @@
       <nav>
         <ul>
           <li>
-            <a href="" onclick="openNewsletterForm()" class="btn_cta"
-              >Prévenez-moi !</a
-            >
+            <a href="" class="btn_cta show_newsletter">Prévenez-moi !</a>
           </li>
         </ul>
       </nav>
@@ -84,25 +83,23 @@
         </p>
         <div class="countDown">
           <div class="time">
-            <div class="day">236</div>
+            <div id ="day"></div>
             <span>Jours</span>
           </div>
           <div class="time">
-            <div class="hour">15</div>
+            <div id ="hour"></div>
             <span>Heures</span>
           </div>
           <div class="time">
-            <div class="minutes">34</div>
+            <div id ="minutes"></div>
             <span>Minutes</span>
           </div>
           <div class="time">
-            <div class="secondes">46</div>
+            <div id ="secondes"></div>
             <span>Secondes</span>
           </div>
         </div>
-        <a href="" onclick="openNewsletterForm()" class="btn_cta"
-          >Prévenez-moi !</a
-        >
+        <a href="" class="btn_cta show_newsletter">Prévenez-moi !</a>
       </div>
 
       <div class="imgBox">
@@ -147,17 +144,16 @@
 
       <!-- Image pour la fermuture de la pop-up du formulaire -->
       <img
-        class="close"
-        onclick="openNewsletterForm()" 
+        class="close show_newsletter"
         src="./img/section/close.png"
         alt="Image pour fermer la pop-up du formulaire"
       />
     </div>
+
     <!-- Footer -->
     <footer>
       <div class="copyright">
-        Tous droits réservés &copy; <a href="#" target="_blank">LouisMzl</a> |
-        2024
+        Tous droits réservés &copy; <a href="#" target="_blank">LouisMzl</a> | <span class="year"></span>
       </div>
     </footer>
 
