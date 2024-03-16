@@ -95,21 +95,21 @@ function updateCountdown(countdown) {
       firstHeaderH2: document.getElementsByTagName("h2")[0],
       firstParagraph: document.getElementsByTagName("p")[0],
       countdown: document.querySelector(".countDown"),
-      secondCallToAction: document.getElementsByClassName("btn_cda")[1]
+      secondCallToAction: document.getElementsByClassName("btn_cta")[1],
     };
     for (const hiddenElement in hiddenContent) {
       if (hiddenContent.hasOwnProperty(hiddenElement)) {
-          const content = hiddenContent[hiddenElement];
-          if (content) {
-            content.style.display = "none";
-          }
+        const content = hiddenContent[hiddenElement];
+        if (content) {
+          content.style.display = "none";
+        }
       }
     }
   }
 }
 
 //Date cible du compte à rebours
-const TARGET_DATE = new Date("September 15, 2024");
+const TARGET_DATE = new Date("March 16, 2024");
 
 /**
  * Définition de l'interval de rafraichissement du compte à rebours
