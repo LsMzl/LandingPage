@@ -105,11 +105,32 @@ function updateCountdown(countdown) {
         }
       }
     }
+
+    let finalMessage = document.querySelector(".countdownOver");
+
+    let newTitle = document.createElement("h2");
+    let newMessage = document.createElement("p");
+    let redirection = document.createElement("a");
+    let newImage = document.querySelector(".imgBox img")
+
+    newTitle.textContent = "Le nouveau site est en ligne !";
+    newMessage.textContent =
+      "Après presque 9 mois de travail acharné nous sommes heureux de vous annoncer que le nouveau site de LouisMzl est en ligne. Nous esperons que vous profiterez pleinement de cette nouvelle expérience et vous remercions de votre patience.";
+    redirection.textContent ="Par ici !"
+    newImage.setAttribute("src", "./img/pngwing.com.png")
+    console.log(newImage);
+
+
+    redirection.setAttribute("href", "https://www.linkedin.com/in/louis-mazzella-5509292a2/")
+
+    finalMessage.appendChild(newTitle);
+    finalMessage.appendChild(newMessage);
+    finalMessage.appendChild(redirection);
   }
 }
 
 //Date cible du compte à rebours
-const TARGET_DATE = new Date("March 16, 2024");
+const TARGET_DATE = new Date("March 16, 2024 10:57:45");
 
 /**
  * Définition de l'interval de rafraichissement du compte à rebours
