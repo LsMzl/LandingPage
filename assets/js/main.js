@@ -130,7 +130,7 @@ function updateCountdown(countdown) {
 }
 
 //Date cible du compte à rebours
-const TARGET_DATE = new Date("March 16, 2024 10:57:45");
+const TARGET_DATE = new Date("March 24, 2024 17:46:00");
 
 /**
  * Définition de l'interval de rafraichissement du compte à rebours
